@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        minSdkVersion 12
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile "com.android.support:appcompat-v7:${versions.support}"
+    compile "com.github.mancj:SlideUp-Android:${versions.SlideUp}"
+    compile "io.reactivex:rxandroid:${versions.Rx.Android}"
+    compile "io.reactivex:rxjava:${versions.Rx.Java}"
+}
+apply from: '../push_maven.gradle'
+apply from: '../push_jcenter.gradle'
