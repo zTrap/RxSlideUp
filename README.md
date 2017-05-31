@@ -15,7 +15,6 @@ maven
       <groupId>ru.ztrap</groupId>
       <artifactId>RxSlideUp</artifactId>
       <version>1.0.0</version>
-      <type>pom</type>
     </dependency>
 
 ## Usage
