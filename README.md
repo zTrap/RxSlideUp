@@ -7,32 +7,36 @@ Reactive listeners for [SlideUp library][1]
 
 gradle
 
-    compile 'ru.ztrap:RxSlideUp:1.0.0'
-
+```groovy
+compile 'ru.ztrap:RxSlideUp:1.0.0'
+```
 maven
-
-    <dependency>
-      <groupId>ru.ztrap</groupId>
-      <artifactId>RxSlideUp</artifactId>
-      <version>1.0.0</version>
-    </dependency>
+```xml
+<dependency>
+  <groupId>ru.ztrap</groupId>
+  <artifactId>RxSlideUp</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
 
 ## Usage
 
-    View slideView = findViewById(R.id.slideView);
-    SlideUp slideUp = new SlideUp.Builder(slideView)
-                    .withStartState(SlideUp.State.HIDDEN)
-                    .withStartGravity(Gravity.BOTTOM)
-                    .build();
+```java
+View slideView = findViewById(R.id.slideView);
+SlideUp slideUp = new SlideUp.Builder(slideView)
+                .withStartState(SlideUp.State.HIDDEN)
+                .withStartGravity(Gravity.BOTTOM)
+                .build();
 
-    //listening SlideUp.Listener.Events
-    RxSlideUp.events(slideUp).subscribe();
+//listening SlideUp.Listener.Events
+RxSlideUp.events(slideUp).subscribe();
 
-    //listening SlideUp.Listener.Slide
-    RxSlideUp.slide(slideUp).subscribe();
+//listening SlideUp.Listener.Slide
+RxSlideUp.slide(slideUp).subscribe();
 
-    //listening SlideUp.Listener.Visibility
-    RxSlideUp.visibility(slideUp).subscribe();
+//listening SlideUp.Listener.Visibility
+RxSlideUp.visibility(slideUp).subscribe();
+```
 
 That's all! Enjoy reactive programming with [RxJava][2], [SlideUp][1] and RxSlideUp!
 
