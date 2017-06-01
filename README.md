@@ -1,8 +1,7 @@
-# RxSlideUp
-Reactive listeners for [SlideUp library][1]
+# RxSlideUp: Reactive listeners for [SlideUp library][1]
 
 [ ![Download](https://api.bintray.com/packages/ztrap-llc/maven/RxSlideUp/images/download.svg) ](https://bintray.com/ztrap-llc/maven/RxSlideUp/_latestVersion)
----
+
 ## Install
 
 gradle
