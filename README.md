@@ -1,6 +1,7 @@
 # RxSlideUp: Reactive listeners for [SlideUp library][1]
 
-[ ![Download](https://api.bintray.com/packages/ztrap-llc/maven/RxSlideUp2/images/download.svg) ](https://bintray.com/ztrap-llc/maven/RxSlideUp2/_latestVersion)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/ru.ztrap/RxSlideUp2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/ru.ztrap/RxSlideUp2)
+[![Javadocs](http://www.javadoc.io/badge/ru.ztrap/RxSlideUp2.svg)](http://www.javadoc.io/doc/ru.ztrap/RxSlideUp2)
 
 ## Install
 
