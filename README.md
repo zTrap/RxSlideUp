@@ -38,7 +38,7 @@ That's all! Enjoy reactive programming with [RxJava][2], [SlideUp][1] and RxSlid
 
 ## Developed By
 
- - Peter Guko
+ - Peter Gulko
  - contacts@ztrap.ru
  - [paypal.me/zTrap](https://www.paypal.me/zTrap)
 
