@@ -39,6 +39,12 @@ RxSlideUp.visibility(slideUp).subscribe();
 
 That's all! Enjoy reactive programming with [RxJava][2], [SlideUp][1] and RxSlideUp!
 
+## Developed By
+
+ - Peter Gulko
+ - contacts@ztrap.ru
+ - [paypal.me/zTrap](https://www.paypal.me/zTrap)
+
 ## License
 
        Copyright 2018 zTrap
