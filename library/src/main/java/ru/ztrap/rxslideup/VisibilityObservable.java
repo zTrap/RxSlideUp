@@ -18,7 +18,7 @@ final class VisibilityObservable extends Observable<Integer> {
     
     @Override
     protected void subscribeActual(Observer<? super Integer> observer) {
-        if (!ThreadUtils.checkMainThread(observer)) {
+        if (ThreadUtils.checkNotMainThread(observer)) {
             return;
         }
         Listener listener = new Listener(mSlideUp, observer);

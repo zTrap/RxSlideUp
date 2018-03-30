@@ -12,7 +12,7 @@ import ru.ztrap.rxslideup.events.SlideUpEvent;
  */
 public final class RxSlideUp {
     private RxSlideUp(){
-        throw new AssertionError("o instances.");
+        throw new AssertionError("No instances.");
     }
     
     public static Observable<Float> slide(SlideUp slideUp){

@@ -19,7 +19,7 @@ final class SlideObservable extends Observable<Float> {
     
     @Override
     protected void subscribeActual(Observer<? super Float> observer) {
-        if (!ThreadUtils.checkMainThread(observer)) {
+        if (ThreadUtils.checkNotMainThread(observer)) {
             return;
         }
         Listener listener = new Listener(mSlideUp, observer);

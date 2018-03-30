@@ -10,7 +10,7 @@ import ru.ztrap.rxslideup.events.SlideUpEvent;
  * @author zTrap
  * date 30.05.2017.
  */
-final class EventsObservable  extends Observable<SlideUpEvent> {
+final class EventsObservable extends Observable<SlideUpEvent> {
     private final SlideUp mSlideUp;
     
     EventsObservable(SlideUp slideUp) {
@@ -19,7 +19,7 @@ final class EventsObservable  extends Observable<SlideUpEvent> {
     
     @Override
     protected void subscribeActual(Observer<? super SlideUpEvent> observer) {
-        if (!ThreadUtils.checkMainThread(observer)) {
+        if (ThreadUtils.checkNotMainThread(observer)) {
             return;
         }
         Listener listener = new Listener(mSlideUp, observer);
