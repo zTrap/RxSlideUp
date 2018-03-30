@@ -1,36 +1,33 @@
 buildscript {
-    version = VERSION_NAME
-    group = GROUP
     ext {
         versions = [
-                support        : '25.3.1',
-                SlideUp        : '2.2.5',
+                support        : '27.1.0',
+                SlideUp        : '2.2.8',
                 Rx             : [
-                        Java     : '1.3.0',
+                        Java     : '1.3.7',
                         Android  : '1.2.1'
                 ]
         ]
     }
     repositories {
         maven { url 'https://jitpack.io' }
-        maven { url 'https://maven.google.com' }
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
-        classpath 'com.novoda:bintray-release:0.3.4'
+        classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath 'com.novoda:bintray-release:0.8.1'
     }
 }
 
 allprojects {
     repositories {
         maven { url 'https://jitpack.io' }
-        maven { url 'https://maven.google.com' }
         jcenter()
+        google()
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-apply plugin: 'android-reporting'

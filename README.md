@@ -1,20 +1,20 @@
 # RxSlideUp: Reactive listeners for [SlideUp library][1]
 
-[ ![Download](https://api.bintray.com/packages/ztrap-llc/maven/RxSlideUp/images/download.svg) ](https://bintray.com/ztrap-llc/maven/RxSlideUp/_latestVersion)
+ [ ![Download](https://api.bintray.com/packages/ztrap-llc/maven/RxSlideUp/images/download.svg) ](https://bintray.com/ztrap-llc/maven/RxSlideUp/_latestVersion)
 
 ## Install
 
 gradle
 
 ```groovy
-compile 'ru.ztrap:RxSlideUp:1.0.0'
+implementation 'ru.ztrap:RxSlideUp:1.0.1'
 ```
 maven
 ```xml
 <dependency>
   <groupId>ru.ztrap</groupId>
   <artifactId>RxSlideUp</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 
@@ -41,7 +41,7 @@ That's all! Enjoy reactive programming with [RxJava][2], [SlideUp][1] and RxSlid
 
 ## License
 
-       Copyright 2017 zTrap
+       Copyright 2018 zTrap
 
        Licensed under the Apache License, Version 2.0 (the "License");
        you may not use this file except in compliance with the License.
