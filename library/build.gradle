@@ -20,4 +20,5 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:$versions.Rx.Android"
     implementation "io.reactivex.rxjava2:rxjava:$versions.Rx.Java"
 }
-apply from: '../push_jcenter.gradle'
+apply from: '../gradle-mvn-push.gradle'
+apply from: '../gradle-jcenter-push.gradle'
